@@ -1,9 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import CurrentTrack from "./CurrentTrack";
-
-import PlayerControls from "./PlayerControls";
+import CurrentTrack from "./currentTrack";
+import PlayerControls from "./Playercontrols";
 import Volume from "./Volume";
+
+
 export default function Footer() {
   return (
     <Container>
