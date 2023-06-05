@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+# React UI - Spotify clone 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a part of assignment provided to me by clarity software. 
+Technologies used:
+1. React v18.2 - JS library
+2. Axios - In order to integrate API calls
+3. ContextAPI - For state management
+4. Styled components - UI Library ( Did not use any alternatives, although i could use MaterialUI or Prime react)
+5. React-icons - For styled icons within this application.
 
-## Available Scripts
+## What is the project about?
 
-In the project directory, you can run:
+This mini project is a spotify clone. I'm using spotify web API.
+Link - https://developer.spotify.com/documentation/web-api
+I have also registered a new application under spotify dev space
+Link - https://developer.spotify.com/
+I have used assets that are licensed by spotify and are available to use via their Press center
+[I Do not own any rights to the logos/media assets used in this application]
+Link - https://newsroom.spotify.com/media-kit/logo-and-brand-assets/
 
-### `npm start`
+The clone application sends requests to play a song, pause a song and choose the next song.
+Play, Pause and Skip - These are the 3 Axios requests that demonstrate the use of REST API calls in this application.
+Currently I have not integrated the search feature in the application.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Login Flow
+In order to login to the application, I have connected my spotify account to the developer page provided by spotify. 
+I have copied the clientID needed in order to mimic my actual spotify player and logged in user details are retrieved 
+from spotify via the Login API call. Along with the API call, We also need an access token which we send to spotify server in order to authenticate the user ( Authentication is handled by spotify, I'm merely using their login services through their API).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Testing the application
+In order to test this application. I need to open up and login to actual spotify application.
+Link: https://open.spotify.com/ 
+This opens up the web player in my browser.
+I have not created my own web player in this application ( Creating that is possible but might take me some time to understand and develop it). 
+Once I open up the actual spotify web player, I need to login to my local spotify clone application.
+Now, since i have logged in to both the actual and clone applications, I'm able to mimic the web player from the clone application.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Known Behaviour - 
+Be aware, If i close the actual web player ( Real spotify application), My clone app will simply throw a runtime error. 
+This is because, clone app needs a dedicated web player and it constantly checks for it. 
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Future enhancements
+I am planning to work on real time search within my application.
