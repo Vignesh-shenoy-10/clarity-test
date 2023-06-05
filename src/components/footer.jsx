@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import CurrentTrack from "./currentTrack";
-import PlayerControls from "./Playercontrols";
+import PlayerControls from "./PlayerControls"
 import Volume from "./Volume";
 
 

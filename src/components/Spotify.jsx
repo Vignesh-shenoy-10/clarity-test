@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Sidebar from "./Sidebar";
 import styled from "styled-components";
 import Footer from "./footer";
-import Navbar from "./NavBar";
+import Navbar from "./navbar";
 import axios from "axios";
 import { useStateProvider } from "../utils/StateProvider";
 import Body from "./body";
@@ -29,6 +29,7 @@ export default function Spotify() {
           "Content-Type": "application/json",
         },
       });
+      //I'm getting the Logged in user info 
       const userInfo = {
         userId: data.id,
         userUrl: data.external_urls.spotify,
