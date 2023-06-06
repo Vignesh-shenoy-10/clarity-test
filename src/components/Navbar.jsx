@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 
 
 
+
 export default function Navbar({ navBackground }) {
 
   const [searchInput,setSearchInput] = useState("");

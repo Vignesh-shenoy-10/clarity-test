@@ -4,7 +4,11 @@ import { MdHomeFilled, MdSearch } from "react-icons/md";
 import { IoLibrary } from "react-icons/io5";
 import Playlists from "./Playlists";
 
+
+
+
 export default function Sidebar() {
+
   return (
     <Container>
       <div className="top__links">
@@ -22,6 +26,8 @@ export default function Sidebar() {
           <li>
             <MdSearch />
             <span>Search</span>
+         
+         
           </li>
           <li>
             <IoLibrary />
