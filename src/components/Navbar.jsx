@@ -4,7 +4,7 @@ import { useStateProvider } from "../utils/StateProvider";
 import { FaSearch } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
 import { useState, useEffect } from "react";
-import { InputGroup, FormControl, FormGroup} from 'react-bootstrap'
+
 
 
 export default function Navbar({ navBackground }) {
@@ -35,6 +35,7 @@ export default function Navbar({ navBackground }) {
       console.log(data)
       setAlbums(data.items)
     })
+    console.log(albums)
   }
   return (
     <Container navBackground={navBackground}>
