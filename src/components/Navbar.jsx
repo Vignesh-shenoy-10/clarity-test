@@ -3,13 +3,24 @@ import styled from "styled-components";
 import { useStateProvider } from "../utils/StateProvider";
 import { FaSearch } from "react-icons/fa";
 import { CgProfile } from "react-icons/cg";
+import { useState, useEffect } from "react";
+
+
+
 export default function Navbar({ navBackground }) {
+  const [searchInput,setSearchInput] = useState("");
+
   const [{ userInfo }] = useStateProvider();
   return (
     <Container navBackground={navBackground}>
       <div className="search__bar">
         <FaSearch />
-        <input type="text" placeholder="Artists, songs, or podcasts" />
+        <input type="input" placeholder="Artists, songs, or podcasts"
+        onChange={event => setSearchInput(event.target.value)}
+        
+        />
+        {console.log(searchInput)}
+        
       </div>
       <div className="avatar">
         <a href={userInfo?.userUrl}>
