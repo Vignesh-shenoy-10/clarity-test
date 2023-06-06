@@ -7,6 +7,7 @@ import { useStateProvider } from "../utils/StateProvider";
 export default function Playlists() {
   const [{ token, playlists }, dispatch] = useStateProvider();
   useEffect(() => {
+    //I need to get playlist data from logged in user
     const getPlaylistData = async () => {
       const response = await axios.get(
         "https://api.spotify.com/v1/me/playlists",
@@ -17,6 +18,8 @@ export default function Playlists() {
           },
         }
       );
+
+      
       const { items } = response.data;
       const playlists = items.map(({ name, id }) => {
         return { name, id };
@@ -30,6 +33,7 @@ export default function Playlists() {
   };
   return (
     <Container>
+    {/* i want to show my playlist data */}
       <ul>
         {playlists.map(({ name, id }) => {
           return (

@@ -7,8 +7,9 @@ export const initialState = {
   currentPlaying: null,
   playerState: false,
   selectedPlaylist: null,
-  selectedPlaylistId: "37i9dQZF1E37jO8SiMT0yN",
+  selectedPlaylistId: "3cEYpjA9oz9GiPac4AsH4n",
 };
+//I have added a default playlist given by spotify hence using the above id
 
 const reducer = (state, action) => {
   switch (action.type) {

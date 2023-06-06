@@ -10,6 +10,7 @@ export default function Body({ headerBackground }) {
 
   useEffect(() => {
     const getInitialPlaylist = async () => {
+      //I want to show my selected playlist ID
       const response = await axios.get(
         `https://api.spotify.com/v1/playlists/${selectedPlaylistId}`,
         {
