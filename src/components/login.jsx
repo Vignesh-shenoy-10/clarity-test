@@ -6,7 +6,8 @@ export default function Login() {
   const handleClick = async () => {
     //client id from spotify dev site
     const client_id = "f0a2ae45569c4ce391a727db63f01a8d";
-    const redirect_uri = "http://localhost:3000/Login";
+    const redirect_uri = "https://vigneshclaritytest.netlify.app/Login"; //for prod
+    //const redirect_uri = "http://localhost:3000/Login";
     const api_uri = "https://accounts.spotify.com/authorize";
     const scope = [
       "user-read-private",

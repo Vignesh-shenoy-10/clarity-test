@@ -90,15 +90,15 @@ export default function Searchmusic() {
                 Back 
               </Button>
         </InputGroup>
+        <p>Integrated Spotify search API to fetch albums based on artist ID</p>
 
     </Container>
     <Container>
-        <Row className="mx-2 row row-cols-4">
-            {albums.map((album,i) => {
+        <Row>
+            {albums.map((album) => {
                 console.log(album)
                 return (
-                    
-                    <Card>
+                    <Card style={{ width: "10rem",margin: "10px" }}>
                     <Card.Img src={album.images[0].url}/>
                     <Card.Body>
                         <Card.Title>{album.name}</Card.Title>
