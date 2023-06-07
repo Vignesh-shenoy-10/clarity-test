@@ -6,8 +6,11 @@ Technologies used:
 1. React v18.2 - JS library
 2. Axios - In order to integrate API calls
 3. ContextAPI - For state management
-4. Styled components - UI Library ( Did not use any alternatives, although i could use MaterialUI or Prime react)
+4. MaterialUI - UI Library (Cards)
 5. React-icons - For styled icons within this application.
+
+## Deployment link:
+https://vigneshclaritytest.netlify.app/
 
 ## What is the project about?
 
@@ -41,5 +44,6 @@ Known Behaviour -
 Be aware, If i close the actual web player ( Real spotify application), My clone app will simply throw a runtime error. 
 This is because, clone app needs a dedicated web player and it constantly checks for it. 
 
-## Future enhancements
-I am planning to work on real time search within my application.
+
+
+
