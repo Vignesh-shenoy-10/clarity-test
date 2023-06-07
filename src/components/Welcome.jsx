@@ -93,7 +93,7 @@ export default function Welcome() {
     </div>
 
     <div style={{display: `flex`, flexDirection: `row`, justifyContent: `center`}}>
-    <Card variant="outlined" sx={{ width: 320, marginTop: 5,marginLeft:'10px' }}>
+    <Card variant="outlined" sx={{ width: 320, marginTop: 5}}>
       <div>
         <Typography level="h2" fontSize="md" sx={{ mb: 0.5 }}>
           How to use this app?
