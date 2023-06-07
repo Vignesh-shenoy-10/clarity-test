@@ -41,5 +41,9 @@ Known Behaviour -
 Be aware, If i close the actual web player ( Real spotify application), My clone app will simply throw a runtime error. 
 This is because, clone app needs a dedicated web player and it constantly checks for it. 
 
-## Future enhancements
-I am planning to work on real time search within my application.
+##Screens
+
+Welcome Page
+
+<img width="1440" alt="Screenshot 2023-06-07 at 4 11 58 PM" src="https://github.com/Vignesh-shenoy-10/clarity-test/assets/92209607/047b2518-1027-4b56-9b3c-f79f7ed53efa">
+
