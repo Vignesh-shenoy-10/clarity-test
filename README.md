@@ -12,6 +12,8 @@ Technologies used:
 ## Deployment link:
 https://vigneshclaritytest.netlify.app/
 
+## I have not added responsiveness to this app yet, Please try this on a desktop/Laptop.
+
 ## Video Demo:
 https://www.awesomescreenshot.com/video/18109883?key=d1b02121e070986597bad12a7503b25e
 
