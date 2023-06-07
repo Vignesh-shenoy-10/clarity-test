@@ -12,6 +12,9 @@ Technologies used:
 ## Deployment link:
 https://vigneshclaritytest.netlify.app/
 
+## Video Demo:
+https://www.awesomescreenshot.com/video/18109883?key=d1b02121e070986597bad12a7503b25e
+
 ## What is the project about?
 
 This mini project is a spotify clone. I'm using spotify web API.
